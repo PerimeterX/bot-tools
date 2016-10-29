@@ -16,7 +16,7 @@ Please install the following packages and tools prior to the session:
     * or go to https://www.python.org/downloads/ to download python for MacOSX
 
 ## Docker images
-* Verify that Docker is running
+* Verify that Docker is running, and from the command line install the following images:
 * Scrapy
 ```bash
 $ docker pull aciobanu/scrapy
