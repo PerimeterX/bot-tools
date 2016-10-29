@@ -16,6 +16,9 @@ This repository contains the resources to help you build a test-lab to run diffe
 ```bash
 $ docker pull wernight/phantomjs
 ```
+* install CasperJS docker ```bash
+$ docker pull zopanix/casperjs
+```
 * Install Selenium docker:
 ```bash
 $ docker pull selenium/hub
