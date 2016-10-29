@@ -17,6 +17,10 @@ Please install the following packages and tools prior to the session:
 
 ## Docker images
 * Verify that Docker is running
+* Scrapy
+```bash
+$ docker pull aciobanu/scrapy
+```
 * CasperJS 
 ```bash
 $ docker pull zopanix/casperjs
