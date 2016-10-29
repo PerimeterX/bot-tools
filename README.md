@@ -1,25 +1,31 @@
 # bot-tools
 
-This repository contains the resources to help you build a test-lab to run different web-bots and a sample test-site to run them against it.
+This repository will host all the resources used and shared for the [tutorial session](http://conferences.oreilly.com/security/network-data-security-ny/public/schedule/detail/52989) in O'Reilly Security NY.
 
-## Pre-requisites
+At this point this repository contains only the instructions and requirements on what should participants download and preinstall prior to the session. 
+The specific scripts and tools user in the session, such as specific tools and web-bots, and a smaple test site to experiment with will be provided here before the session starts.
+
+## Required packages and tools
+Please install the following packages and tools prior to the session:
 * Install Docker. You can download and find instractions on how to install docker for your OS here: https://www.docker.com/products/overview
 * Install python 2.6 or later.
   * Windows: download the latest python version at: https://www.python.org/downloads/
   * Mac: 
-    * use Mac's python
-    * use brew to install python (brew install python)
+    * Check if you already have python installed and its version by running `python -V` on the command line
+    * If you have brew - run `brew install python`
+    * or go to https://www.python.org/downloads/ to download python for MacOSX
 
-## Install packages
+## Docker images
 * Verify that Docker is running
-* Install PhantomJS docker
+* PhantomJS
 ```bash
 $ docker pull wernight/phantomjs
 ```
-* install CasperJS docker ```bash
+* CasperJS 
+```bash
 $ docker pull zopanix/casperjs
 ```
-* Install Selenium docker:
+* Selenium
 ```bash
 $ docker pull selenium/hub
 $ docker pull selenium/node-chrome
