@@ -8,7 +8,7 @@ The specific scripts and tools user in the session, such as specific tools and w
 ## Required packages and tools
 Please install the following packages and tools prior to the session:
 * Install Docker. You can download and find instractions on how to install docker for your OS here: https://www.docker.com/products/overview
-* Install python 2.6 or later.
+* Install python 2.7.
   * Windows: download the latest python version at: https://www.python.org/downloads/
   * Mac: 
     * Check if you already have python installed and its version by running `python -V` on the command line
@@ -17,10 +17,6 @@ Please install the following packages and tools prior to the session:
 
 ## Docker images
 * Verify that Docker is running
-* PhantomJS
-```bash
-$ docker pull wernight/phantomjs
-```
 * CasperJS 
 ```bash
 $ docker pull zopanix/casperjs
