@@ -14,6 +14,8 @@ Please install the following packages and tools prior to the session:
     * Check if you already have python installed and its version by running `python -V` on the command line
     * If you have brew - run `brew install python`
     * or go to https://www.python.org/downloads/ to download python for MacOSX
+* Install Chrome
+* Install ModHeader Chrome extension - https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj
 
 ## Docker images
 * Verify that Docker is running, and from the command line install the following images:
