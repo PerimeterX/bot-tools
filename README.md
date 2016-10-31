@@ -49,7 +49,7 @@ to run application natively on your machine using python see instructions below
 instead of running it in a docker container, the application can run locally using python. To do that do the following:
 ```
 $ cd demoApplication
-$ pip install -r requirement.txt
+$ pip install -r requirements.txt
 $ python app.py
 ```
 
