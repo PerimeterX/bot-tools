@@ -40,4 +40,20 @@ def googlebot():
     else:
         isGooglebot = "Not a Googlebot user-agent"
     return render_template('googlebot.html', isGooglebot=str(isGooglebot))
+
+
+def verifyGooglebotAddr():
+    """Function to verify if a bot comes from Google"""
+    p = re.compile('^.+\.(googlebot|google)\.com$')
+    try:
+        reversed_dns = socket.gethostbyaddr(request.remote_addr)
+    except:
+        m = False
+    else:
+        m = p.match(reversed_dns[0])
+    if (m and request.remote_addr == socket.gethostbyname(reversed_dns[0])):
+        return "Validated Googlebot"
+    else:
+        return "Fake Googlebot - invalid IP address"
+
 ```
