@@ -16,10 +16,15 @@ Configure scrapy to scrape the site:
 * initially at maximum speed, and see that it is blocked
 * tune the rate in which scrapy requests pages, to bypass the threshold limitation, and scrape the entire site.
 
+Refresh the page many times (15).
+
 ## Notes
 
 ## Application Code Snippet
 
 ```
+@app.route('/content')
 @limiter.limit("15/minute", error_message='Slow down cowboy!')
+def content():
+    return render_template('content.html')
 ```
