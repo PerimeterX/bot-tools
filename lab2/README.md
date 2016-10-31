@@ -27,6 +27,10 @@ using the `X-Forwarded-For` header.
 
 Example:`X-Forwarded-For: 54.240.236.40`
 
+Visit http://localhost:5000/cloudvendor and verify you are now blocked.
+
+
+
 ## Application Code Snippet
 
 ```
