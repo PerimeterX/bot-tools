@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+			<title>User-agent Verification</title>
+			<script src="static/js/client.min.js"></script>
+	</head>
+	<body>
+		<script>
+			var client = new ClientJS();
+			var userAgent = client.getUserAgent();
+			console.log( userAgent );
+		</script>
+		<h1>Browser UA: {{ userAgent }} </h1>
+		<h1 id="navua">Navigator UA: </h1>
+		<script>
+			var navua = document.getElementById("navua");
+			navua.innerHTML = "Navigator UA: " + userAgent;
+		</script>
+	</body>
+</html>

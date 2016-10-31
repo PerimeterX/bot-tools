@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html>
+	<head>
+			<title>Homepage</title>
+			<script src="static/js/client.min.js"></script>
+	</head>
+	<body>
+		<script >
+			var client = new ClientJS();
+			var fingerprint = client.getFingerprint();
+
+			function setCookie(cname, cvalue, exsecs) {
+
+				var d = new Date();
+				d.setTime(d.getTime() + (exsecs*1000));
+				var expires = "expires="+d.toUTCString();
+				document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+			}
+     		setCookie("fpid", fingerprint, 360);
+			location.reload();
+		</script>
+		<noscript>
+			<h1> Welcome. To continue please enable Javascript and cookies in your web browser and refesh the page</h1>
+		</noscript>
+	</body>
+</html>

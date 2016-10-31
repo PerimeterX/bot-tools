@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+			<title>PhantomJS Test</title>
+			<script src="static/js/client.min.js"></script>
+	</head>
+	<body>
+		<script>
+			var client = new ClientJS();
+			var userAgent = client.getUserAgent();
+			console.log( userAgent );
+		    var plugins = client.getPlugins(); // Get Plugins
+			console.log( plugins );
+		</script>
+
+		<h1>Browser UA: {{ userAgent }} </h1>
+		<h1 id="navua">Navigator UA: </h1>
+		<h1 id="windowphantom"> </h1>
+		<script>
+			var navua = document.getElementById("navua");
+			navua.innerHTML = "Navigator UA:" + userAgent;
+
+			var wp = document.getElementById("windowphantom");
+			if (window.callPhantom) {
+				wp.innerHTML = "Is PhantomJS: true";
+			} else  {
+				wp.innerHTML = "Is PhantomJS: false";
+				}
+		</script>
+
+
+	</body>
+</html>

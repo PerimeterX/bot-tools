@@ -1,0 +1,4 @@
+Flask==0.10.1
+Flask-Limiter==0.9.3
+geoip2==2.4.0
+iptools==0.6.1
