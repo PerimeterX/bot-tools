@@ -24,6 +24,13 @@ Example: `wget -e robots=off --header="X-Forwarded-For: 1.2.3.4"  -r http://loca
 ## Notes
 For the simplicity of this exercise we will be using an IP address for the blocking. However, be advised that blocking by IP address only may also block legitimate users sharing the IP address (for instance in a coffee house or office).
 
+## Add hidden link
+Add to the content pages the hidden link.
+In the files `templates/content.htnl` and `templates/content_page.html` uncomment the following line right after the `<body>` header 
+```html
+<a rel="nofollow" style="display:none;" href="/hidden">This is a hidden link. A real visitor and respectful bots never come here.</a>
+```
+
 ## Application Code Snippet
 
 ```
