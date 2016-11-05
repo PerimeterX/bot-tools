@@ -33,7 +33,7 @@ In the files `templates/content.htnl` and `templates/content_page.html` uncommen
 
 ## Application Code Snippet
 
-```
+```python
 # Lab 4
 @app.route('/content')
 def content():
