@@ -9,7 +9,9 @@ The specific scripts and tools user in the session, such as specific tools and w
 Please install the following packages and tools prior to the session:
 
 * Install Docker. You can download and find instructions on how to install docker for your OS here: https://www.docker.com/products/overview
-Docker requirements for Windows OS are 64bit Windows 10 Pro. In case you can't install docker, you can still work with a local python installation.
+  * Docker for Windows requirements are 64bit Windows 10 Pro, and the Hyper-V package enabled. 
+  * If you have a different windows version - see https://docs.docker.com/engine/installation/windows/ on how to install docker with Docker Toolbox.
+  * In case you can't install docker, you will need to install node.js for your OS. You can download node.js here https://nodejs.org/en/download/
 * Install python 2.7.
   * Windows: download the latest python version at: https://www.python.org/downloads/
   * Mac:
@@ -24,16 +26,24 @@ Verify that Docker is running, and from the command line install the following i
 
 * Scrapy
 ```bash
-$ docker pull aciobanu/scrapy
+docker pull aciobanu/scrapy
 ```
 * CasperJS
 ```bash
-$ docker pull zopanix/casperjs
+docker pull zopanix/casperjs
 ```
 * Selenium
 ```bash
-$ docker pull selenium/hub
-$ docker pull selenium/node-chrome
+docker pull selenium/hub
+docker pull selenium/node-chrome
+```
+
+## Node packages (if you didn't install docker)
+* Install PhantomJS: http://phantomjs.org/download.html
+* Install CasperJS:
+```bash
+npm install casperjs
+node_modules/casperjs/bin/casperjs selftest
 ```
 
 # Usage
