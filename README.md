@@ -1,9 +1,9 @@
 # Bot-Tools
 
-This repository will host all the resources used and shared for the [tutorial session](http://conferences.oreilly.com/security/network-data-security-ny/public/schedule/detail/52989) in O'Reilly Security NY.
+This repository will host all the resources used and shared for the tutorial session in [O'Reilly Security NY](http://conferences.oreilly.com/security/network-data-security-ny/public/schedule/detail/52989) and [O'Reilly Security EU](http://conferences.oreilly.com/security/network-data-security-eu/public/schedule/detail/53016).
 
 At this point this repository contains only the instructions and requirements on what should participants download and preinstall prior to the session.
-The specific scripts and tools user in the session, such as specific tools and web-bots, and a sample test site to experiment with will be provided here before the session starts.
+The specific tools, test site and instructions are provided in the session itself, and will be updated and published once the tutorial session is done.
 
 ## Required packages and tools
 Please install the following packages and tools prior to the session:
@@ -48,10 +48,13 @@ node_modules/casperjs/bin/casperjs selftest
 
 # Usage
 
+Clone this repository to your selected folder
+
 ## Build Docker
-```
-$ cd demoApplication
-$ docker build -t bot-lab-demo:latest .
+From the repository directory do the following:
+```bash
+cd demoApplication
+docker build -t bot-lab-demo:latest .
 ```
 to run application natively on your machine using python see instructions below
 
@@ -60,10 +63,10 @@ to run application natively on your machine using python see instructions below
 
 ## Run application locally
 instead of running it in a docker container, the application can run locally using python. To do that do the following:
-```
-$ cd demoApplication
-$ pip install -r requirements.txt
-$ python app.py
+```bash
+cd demoApplication
+pip install -r requirements.txt
+python app.py
 ```
 
 ## Notes
