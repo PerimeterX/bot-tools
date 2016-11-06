@@ -5,7 +5,8 @@ This repository will host all the resources used and shared for the tutorial ses
 At this point this repository contains only the instructions and requirements on what should participants download and preinstall prior to the session.
 The specific tools, test site and instructions are provided in the session itself, and will be updated and published once the tutorial session is done.
 
-## Required packages and tools
+## Please install the following prior to the session:
+### Required packages and tools
 Please install the following packages and tools prior to the session:
 
 * Install Docker. You can download and find instructions on how to install docker for your OS here: https://www.docker.com/products/overview
@@ -21,7 +22,7 @@ Please install the following packages and tools prior to the session:
 * Install Chrome
 * Install ModHeader Chrome extension - https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj
 
-## Docker images
+### Docker images
 Verify that Docker is running, and from the command line install the following images:
 
 * Scrapy
@@ -38,7 +39,7 @@ docker pull selenium/hub
 docker pull selenium/node-chrome
 ```
 
-## Node packages (if you didn't install docker)
+### Node packages (if you didn't install docker)
 * Install PhantomJS: http://phantomjs.org/download.html
 * Install CasperJS:
 ```bash
@@ -46,9 +47,13 @@ npm install casperjs
 node_modules/casperjs/bin/casperjs selftest
 ```
 
-# Usage
+# The following will be done and used during the session itself:
+## Usage
 
 Clone this repository to your selected folder
+```
+git clone https://github.com/PerimeterX/bot-tools.git
+```
 
 ## Build Docker
 From the repository directory do the following:
