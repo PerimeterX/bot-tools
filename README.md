@@ -3,11 +3,13 @@
 This repository will host all the resources used and shared for the [tutorial session](http://conferences.oreilly.com/security/network-data-security-ny/public/schedule/detail/52989) in O'Reilly Security NY.
 
 At this point this repository contains only the instructions and requirements on what should participants download and preinstall prior to the session.
-The specific scripts and tools user in the session, such as specific tools and web-bots, and a smaple test site to experiment with will be provided here before the session starts.
+The specific scripts and tools user in the session, such as specific tools and web-bots, and a sample test site to experiment with will be provided here before the session starts.
 
 ## Required packages and tools
 Please install the following packages and tools prior to the session:
-* Install Docker. You can download and find instractions on how to install docker for your OS here: https://www.docker.com/products/overview
+
+* Install Docker. You can download and find instructions on how to install docker for your OS here: https://www.docker.com/products/overview
+Docker requirements for Windows OS are 64bit Windows 10 Pro. In case you can't install docker, you can still work with a local python installation.
 * Install python 2.7.
   * Windows: download the latest python version at: https://www.python.org/downloads/
   * Mac:
@@ -18,7 +20,8 @@ Please install the following packages and tools prior to the session:
 * Install ModHeader Chrome extension - https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj
 
 ## Docker images
-* Verify that Docker is running, and from the command line install the following images:
+Verify that Docker is running, and from the command line install the following images:
+
 * Scrapy
 ```bash
 $ docker pull aciobanu/scrapy
@@ -56,18 +59,18 @@ $ python app.py
 ## Notes
 Each lab folder contains a README.md containing a short description, instructions, and any supporting files required.
 
-## Lab 1 - Checking User Agent for Bad Bots
+## [Lab 1](https://github.com/PerimeterX/bot-tools/tree/master/lab1) - Checking User Agent for Bad Bots
 
-## Lab 2 - Blocking Users from Cloud Hosting and Malicious IP Addresses
+## [Lab 2](https://github.com/PerimeterX/bot-tools/tree/master/lab2) - Blocking Users from Cloud Hosting and Malicious IP Addresses
 
-## Lab 3 - Rate Limiting
+## [Lab 3](https://github.com/PerimeterX/bot-tools/tree/master/lab3) - Rate Limiting
 
-## Lab 4 - Catching Scrapers with Hidden Links
+## [Lab 4](https://github.com/PerimeterX/bot-tools/tree/master/lab4) - Catching Scrapers with Hidden Links
 
-## Lab 5 - Identifying Good Crawlers
+## [Lab 5](https://github.com/PerimeterX/bot-tools/tree/master/lab5) - Identifying Good Crawlers
 
-## Lab 6 - Challenging with Javascript
+## [Lab 6](https://github.com/PerimeterX/bot-tools/tree/master/lab6) - Challenging with Javascript
 
-## Lab 7 - Checking User Agent Take 2 (Navigator)
+## [Lab 7](https://github.com/PerimeterX/bot-tools/tree/master/lab7) - Checking User Agent Take 2 (Navigator)
 
-## Lab 8 - Finding Traces of PhantomJS
+## [Lab 8](https://github.com/PerimeterX/bot-tools/tree/master/lab8) - Finding Traces of PhantomJS
