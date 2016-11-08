@@ -12,7 +12,7 @@ Instructions will use Google [Chrome](https://www.google.com/chrome/) and the ex
 
 Click the ModHeader extension and add a new user-agent. 
 
-  Example UA: ***Nikto Web Scanner***
+  Example `User-Agent: Nikto Web Scanner`
   
 Visit [http://localhost:5000/badbots](http://localhost:5000/badbots) and verify you are now blocked.
 
