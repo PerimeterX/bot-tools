@@ -14,7 +14,7 @@ A simple way to manage that is to add rate limiting rules, which will prevent a 
 Add rate-limiting rules to the application, to limit IP addresses to perform no more than 15 requests per minute.
 
 Using wget:
-* if you are running `wget` from a docker image - use your actual IP address instead `localhost`
+* if you are running `wget` from a docker image - use your actual IP address instead of `localhost`
 * use wget to recursively download with no limit/wait between requests, before and after enabling rate-limiting on the application:
 ```bash
 wget -r localhost:5000/content
