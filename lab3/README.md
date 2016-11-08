@@ -12,11 +12,25 @@ A simple way to manage that is to add rate limiting rules, which will prevent a 
 
 ## Instructions
 Add rate-limiting rules to the application, to limit IP addresses to perform no more than 15 requests per minute.
-Configure scrapy to scrape the site:
+
+Using wget:
+* if you are running `wget` from a docker image - use your actual IP address instead `localhost`
+* use wget to recursively download with no limit/wait between requests, before and after enabling rate-limiting on the application:
+```bash
+wget -r localhost:5000/content
+```
+* once you get blocked - restart the server and try again at a lower rate:
+```bash
+wget -w 5 -r localhost:5000/content
+```
+
+Alternatively - you can configure scrapy to scrape the site:
 * initially at maximum speed, and see that it is blocked
 * tune the rate in which scrapy requests pages, to bypass the threshold limitation, and scrape the entire site.
 
-Refresh the page many times (15).
+You can also refresh the page many times (more than 15 times in a minute).
+
+Or - you can lower the limit and set it to 3 to make it easier for you ;)
 
 ## Notes
 
