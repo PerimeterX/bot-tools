@@ -1,5 +1,5 @@
 # Import the Flask Framework
-from flask import Flask, render_template, request, redirect, escape
+from flask import Flask, render_template, request, Response, redirect, escape
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 300
 
@@ -111,6 +111,10 @@ def hidden():
     bannedIpList.append(request.remote_addr)
     return "You should not be visiting this page. Please respect the robots.txt file.", 403
 
+#create robots.txt file
+@app.route('/robots.txt')
+def robotstxt():
+    return Response("User-agent: *\nDisallow: /hidden", mimetype="text/plain")
 
 @app.before_request
 def checkBannedIPs():
