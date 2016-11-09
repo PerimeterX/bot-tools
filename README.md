@@ -82,25 +82,33 @@ Download an image, and all its parents, from the registry:
 docker pull <image name>
 ```
 Start and stop a container: 
-```docker start/stop <container name>
+```
+docker start/stop <container name>
 ```
 To check the running containers execute: 
-```docker ps
 ```
+docker ps
+```
+
 To show last 50 lines and follow the log output of the container execute: 
-```docker logs --tail=50 -f <container name>
+```
+docker logs --tail=50 -f <container name>
 ```
 To check the running and stopped containers execute: 
-```docker ps -a
+```
+docker ps -a
 ```
 To show the list of the images run: 
-```docker images
+```
+docker images
 ```
 To run a command inside the container namespace you run the following docker command: 
-```docker exec -ti <container name> <command>
+```
+docker exec -ti <container name> <command>
 ```
 This is very useful when you want to connect to a running container and work inside of the container. 
-```docker exec -ti <container name> bash
+```
+docker exec -ti <container name> bash
 ```
 
 ## Notes
