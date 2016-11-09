@@ -1,5 +1,5 @@
 # Import the Flask Framework
-from flask import Flask, render_template, request, redirect, escape
+from flask import Flask, render_template, request, Response, redirect, escape
 app = Flask(__name__)
 
 from flask_limiter import Limiter
