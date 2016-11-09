@@ -13,13 +13,20 @@ Open the URL [http://localhost:5000/phantomjs](http://localhost:5000/phantomjs) 
 
 Now run the following command to execute the PhantomJS script. 
 
-`docker run --rm  -v $PWD:/data --net="host" zopanix/casperjs default_phantom.js http://<machine-ip>:5000/phantomjs results_default_phantom.png`
+Mac or Linux:
+```docker run --rm  -v $PWD:/data --net="host" zopanix/casperjs default_phantom.js http://<machine-ip>:5000/phantomjs results_default_phantom.png```
+Windows:
+```docker run --rm  -v %cd%:/data --net="host" zopanix/casperjs default_phantom.js http://<machine-ip>:5000/phantomjs results_default_phantom.png```
 
-The results are saved to `results_default_phantom.png`. This is a screenshot of the browser view. See the default PhantomJS user-agent.
+The results are saved to `results_default_phantom.png`. 
+This is a screenshot of the browser view. See the default PhantomJS user-agent.
 
-Now run the updated script that changes the user-agent.
+Now run the updated script that changes the user-agent (note that this command will also change `navigator.userAgent`).
 
-`docker run --rm  -v $PWD:/data --net="host" zopanix/casperjs spoofedUA_phantom.js  http://<machine-ip>:5000/phantomjs results_spoofed_phantom.png`
+Mac or Linux:
+```docker run --rm  -v $PWD:/data --net="host" zopanix/casperjs spoofedUA_phantom.js  http://<machine-ip>:5000/phantomjs results_spoofed_phantom.png```
+Windows:
+```docker run --rm  -v %cd%:/data --net="host" zopanix/casperjs spoofedUA_phantom.js  http://<machine-ip>:5000/phantomjs results_spoofed_phantom.png```
 
 Open the file `results_spoofed_phantom.png` and you can see how PhantomJS changes both the user-agent string send in the headers and the Navigator object. Still, the window.phantom object exists and can be used to identify PhantomJS visitors.
 
