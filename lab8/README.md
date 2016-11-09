@@ -29,7 +29,7 @@ Now run the updated script that changes the user-agent (note that this command w
 
 Mac or Linux:
 ```
-docker run --rm  -v $PWD:/data --net="host" zopanix/casperjs spoofedUA_phantom.js  http://<machine-ip>:5000/phantomjs results_spoofed_phantom.png
+docker run --rm  -v $PWD:/data --net="host" zopanix/casperjs spoofedUA_phantom.js  http://<machine-ip>:5000/phantomjs results_phantom.png
 ```
 Windows:
 ```
