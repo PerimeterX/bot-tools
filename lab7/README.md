@@ -16,7 +16,7 @@ Instructions will use Google [Chrome](https://www.google.com/chrome/) and the ex
 1. Visit [http://localhost:5000/useragent](http://localhost:5000/useragent) and observe the user-agent sent by the browser and the Navigator obect user-agent are the same.
 2. Click the ModHeader extension and add a new user-agent. 
 
-  Example UA: ***Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)***
+  Example User-Agent: ***Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)***
 
 3. Refresh the URL. What do you observe? There is now a mismatch between the user-agent sent in the HTTP header and what is reported from the navigator object.
 
