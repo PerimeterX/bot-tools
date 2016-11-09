@@ -41,4 +41,10 @@ Or - you can lower the limit and set it to 3 to make it easier for you ;)
 @limiter.limit("15/minute", error_message='Slow down cowboy!')
 def content():
     return render_template('content.html')
+
+@app.route('/content/<path:path>')
+@limiter.limit("15/minute", error_message='Slow down cowboy!')
+def content_pages(path):
+    return render_template('content_page.html', pageInfo=str(path))
+
 ```
