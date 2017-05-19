@@ -2,8 +2,8 @@
 
 This repository will host all the resources used and shared for the tutorial session in [O'Reilly Security NY](http://conferences.oreilly.com/security/network-data-security-ny/public/schedule/detail/52989) and [O'Reilly Security EU](http://conferences.oreilly.com/security/network-data-security-eu/public/schedule/detail/53016).
 
-At this point this repository contains only the instructions and requirements on what should participants download and preinstall prior to the session.
-The specific tools, test site and instructions are provided in the session itself, and will be updated and published once the tutorial session is done.
+This readme file has the instructions and requirements on what should participants download and preinstall prior to the session.
+The specific tools, test site and instructions are also included in this repository under the `Lab N` sections and will be covered in the session itself.
 
 ## Please install the following prior to the session:
 ### Required packages and tools
@@ -111,7 +111,7 @@ This is very useful when you want to connect to a running container and work ins
 docker exec -ti <container name> bash
 ```
 
-## Notes
+## Notes and instructions for the session
 Each lab folder contains a README.md containing a short description, instructions, and any supporting files required.
 
 ## [Lab 1](https://github.com/PerimeterX/bot-tools/tree/master/lab1) - Checking User Agent for Bad Bots
