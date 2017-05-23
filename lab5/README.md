@@ -22,7 +22,7 @@ Implement the rules to detect and whitelist Googlebot:
   * verify that the hostname received is in one of the domains: `google.com` or `googlebot.com`
   * resolve the hostname you received, and verify that the IP address you receive is the same as the IP address you started with
   * see https://support.google.com/webmasters/answer/80553?hl=en
-  * Example for a googlebot IP is 66.249.73.49. To test that the detection is working you can set the header `X-Forwarded-For: 66.249.73.49` 
+  * Example for a googlebot IP is 66.249.73.49. To test that the detection is working set the XFF header as follows: `X-Forwarded-For: 66.249.73.49` 
 
 ## Notes
 * Many other crawlers follow the same logic that was set by Google.
